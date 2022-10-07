@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
-describe('page', () => {
-  it('works', () => {
+describe('first', () => {
+  it('banner', () => {
     cy.visit('https://example.cypress.io')
+    cy.get('.banner').should('contain.text', 'Kitchen Sink')
   })
 })
